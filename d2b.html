@@ -1,0 +1,360 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Decimal to Binary</title>
+<link href="e42/css/bootstrap.css" rel="stylesheet" type="text/css">
+<link href="e42/css/bootstrap-responsive.css" rel="stylesheet" type="text/css">
+<link href="e42/css/bootstrap-extended.css" rel="stylesheet" type="text/css">
+<link href="e42/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link href="e42/css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css">
+<link href="e42/css/custom.css" rel="stylesheet" type="text/css">
+<link href='http://fonts.googleapis.com/css?family=Special+Elite|Open+Sans:400italic,400,700' rel='stylesheet' type='text/css'>
+</head>
+<body>
+<header class="row-fluid">
+	<div class="span12 text-center">
+    	<h1>Decimal to Binary</h1>
+    </div>
+</header>
+<div class="navbar navbar-default">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="e42.html">10 Types of People</a>
+          </div>
+          <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+              <li><a href="e42.html">Home</a></li>
+              <li><a href="binary.html">Binary</a></li>
+              <li><a href="decimal.html">Decimal</a></li>
+              <li><a href="hexadecimal.html">Hexadecimal</a></li>
+              <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown">Binary Conversions<b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="b2d.html">Binary to Decimal</a></li>
+                  <li><a href="b2h.html">Binary to Hexadecimal</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown">Decimal Conversions <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li class="active"><a href="d2b.html">Decimal to Binary</a></li>
+                  <li><a href="d2h.html">Decimal to Hexadecimal</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown">Hexadecimal Conversions <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="h2b.html">Hexadecimal to Binary</a></li>
+                  <li><a href="h2d.html">Hexadecimal to Decimal</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+<div class="jumbotron">
+<div class="container text-center">
+      <div class="row">
+  <div class="col-xs-6 col-md-2"></div>
+  <div class="col-xs-6 col-md-8">
+<h1>1001019910510997108</h1>
+    <p>Converting from decimal to binary is very easy as long as you can divide by 2.</p>
+
+</div>
+</div>
+</div>
+  <div class="col-xs-6 col-md-2"></div>
+</div>
+<div class="row">
+  <div class="col-xs-6 col-md-3"></div>
+  <div class="col-xs-6 col-md-6">
+  <p2>1.  Take the string of decimal and divie by 2.  Put that remainder in Column A.  Carry the answer to the next step</p2>
+  <br>
+  <p2>2. Divide the answer by 2 and record the remainder in Column B.  Move the answer on to the following step.</p2>
+  <br>
+  <p2>3.  Carry on in this fashion until you get the number whittled away.  Once you can't divide any further, take the number out of chart, put it together, and that's your binary conversion.</p2>
+  <br>
+    <table class="table">
+  		<thead>
+    	<tr>
+        	<th>N</th>
+        	<th>M</th>
+        	<th>L</th>
+        	<th>K</th>
+        	<th>J</th>
+        	<th>I</th>
+        	<th>H</th>
+        	<th>G</th>
+            <th>F</th>
+            <th>E</th>
+            <th>D</th>
+            <th>C</th>
+            <th>B</th>
+            <th>A</th>
+            <th>Explanation</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+         <td></td>
+            <td></td>
+        	<td></td>
+        	<td></td>
+        	<td></td>
+        	<td></td>
+        	<td></td>
+        	<td></td>
+        	<td></td>
+        	<td></td>
+        	<td></td>
+        	<td></td>
+        	<td></td>
+        	<td>1</td>
+        	<td>For our example, we'll use the decimal number 8675.  Divide the number by 2 and the remainder is 1 which goes in column A.  The answer was 4337 and goes to the next step.</td>
+        </tr>
+        <tr>
+        <td></td>
+        	<td></td>
+        	<td></td>
+        	<td></td>
+        	<td></td>
+        	<td></td>
+        	<td></td>
+        	<td></td>
+        	<td></td>
+        	<td></td>
+        	<td></td>
+        	<td></td>
+        	<td>1</td>
+        	<td>1</td>
+        	<td>4337 leaves a remainder of 1 when divided by 2 which goes in column B and the answer, 2168, is rolled into the next step.</td>
+        </tr>
+        <tr>
+        <td></td>
+        	<td></td>
+        	<td></td>
+        	<td></td>
+        	<td></td>
+        	<td></td>
+        	<td></td>
+        	<td></td>
+        	<td></td>
+        	<td></td>
+        	<td></td>
+        	<td>0</td>
+        	<td>1</td>
+        	<td>1</td>
+        	<td>There is no remainder when 2168 is divided by 2 so a 0 is entered in column C and 1084 is moved into the next step.</td>
+        </tr>
+        <tr>
+        <td></td>
+        	<td></td>
+        	<td></td>
+        	<td></td>
+        	<td></td>
+        	<td></td>
+        	<td></td>
+        	<td></td>
+        	<td></td>
+        	<td></td>
+        	<td>0</td>
+        	<td>0</td>
+        	<td>1</td>
+        	<td>1</td>
+        	<td>1084 also leaves no remainder meaning column D also gets a 0.  The answer here is 542 which is rolled into the next bit.</td>
+        </tr>
+        <tr>
+        <td></td>
+        	<td></td>
+        	<td></td>
+        	<td></td>
+        	<td></td>
+        	<td></td>
+        	<td></td>
+        	<td></td>
+        	<td></td>
+        	<td>0</td>
+        	<td>0</td>
+        	<td>0</td>
+        	<td>1</td>
+        	<td>1</td>
+        	<td>542 is another number with a remainder of 0 giving an answer of 271.</td>
+        </tr>
+        <tr>
+        <td></td>
+        	<td></td>
+        	<td></td>
+        	<td></td>
+        	<td></td>
+        	<td></td>
+        	<td></td>
+        	<td></td>
+        	<td>1</td>
+        	<td>0</td>
+        	<td>0</td>
+        	<td>0</td>
+        	<td>1</td>
+        	<td>1</td>
+        	<td>271 leaves a remainder of 1 which is recorded in column F.  135 is moved on into the next step.</td>
+        </tr>
+        <tr>
+        <td></td>
+        	<td></td>
+        	<td></td>
+        	<td></td>
+        	<td></td>
+        	<td></td>
+        	<td></td>
+        	<td>1</td>
+        	<td>1</td>
+        	<td>0</td>
+        	<td>0</td>
+        	<td>0</td>
+        	<td>1</td>
+        	<td>1</td>
+        	<td>135 leaves a remainder of 1 which is recorded in column G.  67 is moved on.</td>
+        </tr>
+        <tr>
+        <td></td>
+        	<td></td>
+        	<td></td>
+        	<td></td>
+        	<td></td>
+        	<td></td>
+        	<td>1</td>
+        	<td>1</td>
+        	<td>1</td>
+        	<td>0</td>
+        	<td>0</td>
+        	<td>0</td>
+        	<td>1</td>
+        	<td>1</td>
+        	<td>67 divided by 2 has an answer of 33 leaves a remainder of 1 which is recorded in column H.</td>
+        </tr>
+        <tr>
+        <td></td>
+        	<td></td>
+        	<td></td>
+        	<td></td>
+        	<td></td>
+        	<td>1</td>
+        	<td>1</td>
+        	<td>1</td>
+        	<td>1</td>
+        	<td>0</td>
+        	<td>0</td>
+        	<td>0</td>
+        	<td>1</td>
+        	<td>1</td>
+        	<td>33 divided by 2 has an answer of 16 leaves a remainder of 1 which is recorded in column I.</td>
+        </tr>
+        <tr>
+        <td></td>
+        	<td></td>
+        	<td></td>
+        	<td></td>
+        	<td>0</td>
+        	<td>1</td>
+        	<td>1</td>
+        	<td>1</td>
+        	<td>1</td>
+        	<td>0</td>
+        	<td>0</td>
+        	<td>0</td>
+        	<td>1</td>
+        	<td>1</td>
+        	<td>16 divided by 2 has an answer of 8 with no remainder recorded in column J.</td>
+        </tr>
+        <tr>
+        <td></td>
+        	<td></td>
+        	<td></td>
+        	<td>0</td>
+        	<td>0</td>
+        	<td>1</td>
+        	<td>1</td>
+        	<td>1</td>
+        	<td>1</td>
+        	<td>0</td>
+        	<td>0</td>
+        	<td>0</td>
+        	<td>1</td>
+        	<td>1</td>
+        	<td>8 divided by 2 has an answer of 4 with no remainder recorded in column K.</td>
+        </tr>
+        <tr>
+        <td></td>
+        	<td></td>
+        	<td>0</td>
+        	<td>0</td>
+        	<td>0</td>
+        	<td>1</td>
+        	<td>1</td>
+        	<td>1</td>
+        	<td>1</td>
+        	<td>0</td>
+        	<td>0</td>
+        	<td>0</td>
+        	<td>1</td>
+        	<td>1</td>
+        	<td>4 divided by 2 has an answer of 2 with no remainder recorded in column L.</td>
+        </tr>
+        <tr>
+        <td></td>
+        	<td>0</td>
+        	<td>0</td>
+        	<td>0</td>
+        	<td>0</td>
+        	<td>1</td>
+        	<td>1</td>
+        	<td>1</td>
+        	<td>1</td>
+        	<td>0</td>
+        	<td>0</td>
+        	<td>0</td>
+        	<td>1</td>
+        	<td>1</td>
+        	<td>2 divided by 2 has an answer of 1 with no remainder recorded in column M.</td>
+        </tr>
+        <tr>
+        <td>1</td>
+        	<td>0</td>
+        	<td>0</td>
+        	<td>0</td>
+        	<td>0</td>
+        	<td>1</td>
+        	<td>1</td>
+        	<td>1</td>
+        	<td>1</td>
+        	<td>0</td>
+        	<td>0</td>
+        	<td>0</td>
+        	<td>1</td>
+        	<td>1</td>
+        	<td>2 divided by 1 has an answer of 0 with a remainder of 1 recorded in column N.  This gives us our answer that the decimal number <b>8675</b> is equivalent to <b>10000111110011</b> in binary.</td>
+        </tr>
+        </tbody>
+        </table>
+    </div>
+      </div>
+  </div>
+  <div class="col-xs-6 col-md-3"></div>
+</div>
+
+        </div>
+  
+<footer class="footer">
+    <p>&copy; 2014 Jenni Whitman</p>
+</footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="http://getbootstrap.com/dist/js/bootstrap.min.js"></script>
+    <script src="http://getbootstrap.com/assets/js/docs.min.js"></script>
+</body>
+</html>

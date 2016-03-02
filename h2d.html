@@ -1,0 +1,153 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Hexadecimal to Decimal</title>
+<link href="e42/css/bootstrap.css" rel="stylesheet" type="text/css">
+<link href="e42/css/bootstrap-responsive.css" rel="stylesheet" type="text/css">
+<link href="e42/css/bootstrap-extended.css" rel="stylesheet" type="text/css">
+<link href="e42/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link href="e42/css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css">
+<link href="e42/css/custom.css" rel="stylesheet" type="text/css">
+<link href='http://fonts.googleapis.com/css?family=Special+Elite|Open+Sans:400italic,400,700' rel='stylesheet' type='text/css'>
+</head>
+<body>
+<header class="row-fluid">
+	<div class="span12 text-center">
+    	<h1>Hexadecimal to Decimal</h1>
+    </div>
+</header>
+<div class="navbar navbar-default">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="e42.html">10 Types of People</a>
+          </div>
+          <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+              <li><a href="e42.html">Home</a></li>
+              <li><a href="binary.html">Binary</a></li>
+              <li><a href="decimal.html">Decimal</a></li>
+              <li><a href="hexadecimal.html">Hexadecimal</a></li>
+              <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown">Binary Conversions<b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="b2d.html">Binary to Decimal</a></li>
+                  <li><a href="b2h.html">Binary to Hexadecimal</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown">Decimal Conversions <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="d2b.html">Decimal to Binary</a></li>
+                  <li><a href="d2h.html">Decimal to Hexadecimal</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown">Hexadecimal Conversions <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="h2b.html">Hexadecimal to Binary</a></li>
+                  <li class="active"><a href="h2d.html">Hexadecimal to Decimal</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+<div class="jumbotron">
+<div class="container text-center">
+      <div class="row">
+  <div class="col-xs-6 col-md-2"></div>
+  <div class="col-xs-6 col-md-8">
+<h1>48 65 78 61 64 65 63 69 6d 61 6c</h1>
+    <p>Converting from Hexadecimal to decimal is as easy as multiplying by 16... a lot.</p>
+
+</div>
+</div>
+</div>
+  <div class="col-xs-6 col-md-2"></div>
+</div>
+<div class="row">
+  <div class="col-xs-6 col-md-3"></div>
+  <div class="col-xs-6 col-md-6">
+  <p2>1.  Take the hexadecimal number and write it out, one digit per column.</p2>
+  <br>
+  <p2>2. Convert each hex digit to decimal.  These should be second nature since A-F are equivalent to 10-15, but you can learn more on the <a href="hexadecimal.html">Hexadecimal</a> page.</p2>
+  <br>
+  <p2>3.  Underneath this, write out 16<sup>x</sup> per column starting from the right where x begins with 0 and gains 1 per column (3, 2, 1, 0).</p2>
+  <br>  
+  <p2>4.  Multiply the number from steps 2 and 3 in each column together.</p2>
+  <br>  
+  <p2>5.  Add the resulting numbers together and you have the decimal equivalent of the given hexadecimal number.</p2>
+  <br>  
+  
+  <table class="table">
+  		<thead>
+    	<tr>
+            <th>D</th>
+            <th>C</th>
+            <th>B</th>
+            <th>A</th>
+            <th>Explanation</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+        	<td>A</td>
+        	<td>F</td>
+        	<td>2</td>
+        	<td>3</td>
+        	<td>First, we take our number AF23 and enter it one digit per column.</td>
+        </tr>
+        <tr>
+        	<td>10</td>
+        	<td>15</td>
+        	<td>2</td>
+        	<td>3</td>
+        	<td>Then we convert each hex digit to decimal.  Remember, A-F are equivalent to 10-15 so the A becomes 10 and the F becomes 15.</td>
+        </tr>
+        <tr>
+        	<td>16<sup>3</sup></td>
+        	<td>16<sup>2</sup></td>
+        	<td>16<sup>1</sup></td>
+        	<td>16<sup>0</sup></td>
+        	<td>Next write out 16<sup>x</sup> in each column starting from the left with 0 for x, increasing by 1 to the left each time.</td>
+        </tr>
+        <tr>
+        	<td>16<sup>3</sup> &#215; 10</td>
+        	<td>16<sup>2</sup> &#215; 15</td>
+        	<td>16<sup>1</sup> &#215; 2</td>
+        	<td>16<sup>0</sup> &#215; 3</td>
+        	<td>Multiply these by the decimal equivalents from the step before.</td>
+        </tr>
+        <tr>
+        	<td>40960</td>
+        	<td>3840</td>
+        	<td>32</td>
+        	<td>3</td>
+        	<td>Then add these numbers together and you will get <b>44835</b> as the decimal equivalent of the hexadecimal number <b>AF23</b>.</td>
+        </tr>
+        </tbody>
+        </table>
+    </div>
+      </div>
+  </div>
+  <div class="col-xs-6 col-md-3"></div>
+</div>
+
+        </div>
+
+<footer class="footer">
+    <p>&copy; 2014 Jenni Whitman</p>
+</footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="http://getbootstrap.com/dist/js/bootstrap.min.js"></script>
+    <script src="http://getbootstrap.com/assets/js/docs.min.js"></script>
+</body>
+</html>
+

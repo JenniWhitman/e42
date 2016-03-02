@@ -1,0 +1,33 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	background-color: ##F8F8F8;
+	color: #000000;
+	text-center;
+	margin-bottom: 130px;
+}
+article{
+	background-color: ##F8F8F8;
+	color: #000000;
+	text-center;
+}
+h1 {font-family: 'Special Elite', cursive;}
+p {font-family: 'Open Sans', sans-serif;}
+p1{font-family: 'Open Sans', sans-serif;}
+p2{font-family: 'Open Sans', sans-serif;
+	font-size:120%;}
+
+
+.jumbotron {
+	clear: left;
+	background-color: #359E31;
+	text-center;
+}
+
+.footer{
+height: 100px;
+width: 100%;
+margin: 0;
+text:center;
+}

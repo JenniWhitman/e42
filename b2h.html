@@ -1,0 +1,128 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Binary to Hexadecimal</title>
+<link href="e42/css/bootstrap.css" rel="stylesheet" type="text/css">
+<link href="e42/css/bootstrap-responsive.css" rel="stylesheet" type="text/css">
+<link href="e42/css/bootstrap-extended.css" rel="stylesheet" type="text/css">
+<link href="e42/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link href="e42/css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css">
+<link href="e42/css/custom.css" rel="stylesheet" type="text/css">
+<link href='http://fonts.googleapis.com/css?family=Special+Elite|Open+Sans:400italic,400,700' rel='stylesheet' type='text/css'>
+</head>
+<body>
+<header class="row-fluid">
+	<div class="span12 text-center">
+    	<h1>Binary to Hexadecimal</h1>
+    </div>
+</header>
+<div class="navbar navbar-default">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="e42.html">10 Types of People</a>
+          </div>
+          <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+              <li><a href="e42.html">Home</a></li>
+              <li><a href="binary.html">Binary</a></li>
+              <li><a href="decimal.html">Decimal</a></li>
+              <li><a href="hexadecimal.html">Hexadecimal</a></li>
+              <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown">Binary Conversions<b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="b2d.html">Binary to Decimal</a></li>
+                  <li class="active"><a href="b2h.html">Binary to Hexadecimal</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown">Decimal Conversions <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="d2b.html">Decimal to Binary</a></li>
+                  <li><a href="d2h.html">Decimal to Hexadecimal</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown">Hexadecimal Conversions <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="h2b.html">Hexadecimal to Binary</a></li>
+                  <li><a href="h2d.html">Hexadecimal to Decimal</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+<div class="jumbotron">
+<div class="container text-center">
+      <div class="row">
+  <div class="col-xs-6 col-md-2"></div>
+  <div class="col-xs-6 col-md-8">
+<h1>01100010 01101001 01101110 01100001 01110010 01111001</h1>
+    <p>Converting from binary to hexadecimal is very easy as long as you can separate 4 bits (1s and 0s) at a time.</p>
+
+</div>
+</div>
+</div>
+  <div class="col-xs-6 col-md-2"></div>
+</div>
+<div class="row">
+  <div class="col-xs-6 col-md-3"></div>
+  <div class="col-xs-6 col-md-6">
+  <p2>1.  Take the string of binary and split it into groups of 4.  If there are any missing bits, add zeros to the left side to make up the last group of 4.</p2>
+  <br>
+  <p2>2. Each of these values is equivalent to one hexadecimal digit from 0-F.  Convert this using the <a href="binary.html">Binary</a> page as a guide for these small calculations or the <a href="b2d.html">Binary to Decimal</a> Page if you'd like a little math practice.</p2>
+  <br>
+  <p2>3.  Put these numbers together and you have a hexadecimal number equivalent to the original binary number.</p2>
+  <br>
+  <table class="table">
+  	<thead>
+    	<tr>
+        	<th>Binary</th>
+            <th>Changes</th>
+            <th>Hexadecimal</th>
+            <th>Exaplanation</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+        <td>1001010101</td>
+        <td><FONT COLOR="FF0000">00</FONT>10 0101 0101</td>
+        <td></td>
+        <td>Split the binary into groups of four after adding leading zeros to make this an even split.</td>
+        </tr>
+        <tr>
+        <td>0010 0101 0101</td>
+        <td><FONT COLOR="FF0000">2 5 5</FONT></td>
+        <td>255</td>
+        <td>Convert each of the 4 values to a basic hex value.  Since these are all under 15, this will easily convert to a 0-F.  You can find a reference for these on the <a href="binary.html">Binary</a> page.</td>
+        </tr>
+        <tr>
+        <td>0010 0101 0101</td>
+        <td></td>
+        <td>255</td>
+        <td>Voila!  <b>1001010101</b> in binary is equal to <b>255</b> in hexadecimal.</td>
+        </tr>
+        </tbody>
+        </table>
+    </div>
+      </div>
+  </div>
+  <div class="col-xs-6 col-md-3"></div>
+</div>
+
+        </div>
+<footer class="footer">
+    <p>&copy; 2014 Jenni Whitman</p>
+</footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="http://getbootstrap.com/dist/js/bootstrap.min.js"></script>
+    <script src="http://getbootstrap.com/assets/js/docs.min.js"></script>
+</body>
+</html>

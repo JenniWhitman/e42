@@ -1,0 +1,160 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Decimal to hexadecimal</title>
+<link href="e42/css/bootstrap.css" rel="stylesheet" type="text/css">
+<link href="e42/css/bootstrap-responsive.css" rel="stylesheet" type="text/css">
+<link href="e42/css/bootstrap-extended.css" rel="stylesheet" type="text/css">
+<link href="e42/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link href="e42/css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css">
+<link href="e42/css/custom.css" rel="stylesheet" type="text/css">
+<link href='http://fonts.googleapis.com/css?family=Special+Elite|Open+Sans:400italic,400,700' rel='stylesheet' type='text/css'>
+</head>
+<body>
+<header class="row-fluid">
+	<div class="span12 text-center">
+    	<h1>Decimal to hexadecimal</h1>
+    </div>
+</header>
+<div class="navbar navbar-default">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="e42.html">10 Types of People</a>
+          </div>
+          <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+              <li><a href="e42.html">Home</a></li>
+              <li><a href="binary.html">Binary</a></li>
+              <li><a href="decimal.html">Decimal</a></li>
+              <li><a href="hexadecimal.html">Hexadecimal</a></li>
+              <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown">Binary Conversions<b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="b2d.html">Binary to Decimal</a></li>
+                  <li><a href="b2h.html">Binary to Hexadecimal</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown">Decimal Conversions <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="d2b.html">Decimal to Binary</a></li>
+                  <li class="active"><a href="d2h.html">Decimal to Hexadecimal</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown">Hexadecimal Conversions <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="h2b.html">Hexadecimal to Binary</a></li>
+                  <li><a href="h2d.html">Hexadecimal to Decimal</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+<div class="jumbotron">
+<div class="container text-center">
+      <div class="row">
+  <div class="col-xs-6 col-md-2"></div>
+  <div class="col-xs-6 col-md-8">
+<h1>1001019910510997108</h1>
+    <p>Converting from decimal to hexadecimal is very easy as long as you can divide by 16.</p>
+
+</div>
+</div>
+</div>
+  <div class="col-xs-6 col-md-2"></div>
+</div>
+<div class="row">
+  <div class="col-xs-6 col-md-3"></div>
+  <div class="col-xs-6 col-md-6">
+  <p2>1.  Take the decimal number and divide by 16.  Put the remainder, as a hexadecimal value (meaning 10-15 need to be converted to A-F) in column A.  Carry the answer to the next step.</p2>
+  <br>
+  <p2>2. Divide the answer from above (without remainder) by 16.  The next remainder (in hex) goes in column B.  The answer is carried on.</p2>
+  <br>
+  <p2>3.  Continue this until you can divide by 16 no further.  Put all of these numbers together and you have an answer!</p2>
+  <br>  
+  
+  <table class="table">
+  		<thead>
+    	<tr>
+            <th>F</th>
+            <th>E</th>
+            <th>D</th>
+            <th>C</th>
+            <th>B</th>
+            <th>A</th>
+            <th>Exaplanation</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+        	<td></td>
+        	<td></td>
+        	<td></td>
+        	<td></td>
+        	<td></td>
+        	<td>3</td>
+        	<td>For our example, we'll use the decimal number 9732451.  The first step is to divide this number by 16.  The remainder is 3 which goes in column A.  The Answer is 608278 which moves on to the next step.</td>
+        </tr>
+        <tr>
+        	<td></td>
+        	<td></td>
+        	<td></td>
+        	<td></td>
+        	<td>6</td>
+        	<td>3</td>
+        	<td>We divide 608278 by 16 and get 38017 with a remainder of 6.  6 goes in column B and 38017 is rolled over to the next step.</td>
+        </tr>
+        <tr>
+        	<td></td>
+        	<td></td>
+        	<td></td>
+        	<td>1</td>
+        	<td>6</td>
+        	<td>3</td>
+        	<td>We divide 38017 by 16 and get 2376 with a remainder of 1.  The 1 goes in column C and the 2376 is carried into the next step.</td>
+        </tr>
+        <tr>
+        	<td></td>
+        	<td></td>
+        	<td>8</td>
+        	<td>1</td>
+        	<td>6</td>
+        	<td>3</td>
+        	<td>Divide 2376 by 16 and get 148 with a remainder of 8.  The 8 is put in column D and we carry over the 148.</td>
+        </tr>
+        <tr>
+        	<td>9</td>
+        	<td>4</td>
+        	<td>8</td>
+        	<td>1</td>
+        	<td>6</td>
+        	<td>3</td>
+        	<td>Dividing 148 by 16 gives 9 with a remainder of 4. Since 9 is less than 16 we've reached teh end of the road.  The 4 goes in column E and the 9 goes in column F.  The hexadecimal equivalent of the decimal number <b>9732451</b> is <b>948163</b>.</td>
+        </tr>
+        </tbody>
+        </table>
+    </div>
+      </div>
+  </div>
+  <div class="col-xs-6 col-md-3"></div>
+</div>
+
+        </div>
+  
+<footer class="footer">
+    <p>&copy; 2014 Jenni Whitman</p>
+</footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="http://getbootstrap.com/dist/js/bootstrap.min.js"></script>
+    <script src="http://getbootstrap.com/assets/js/docs.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,182 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Binary to Decimal</title>
+<link href="e42/css/bootstrap.css" rel="stylesheet" type="text/css">
+<link href="e42/css/bootstrap-responsive.css" rel="stylesheet" type="text/css">
+<link href="e42/css/bootstrap-extended.css" rel="stylesheet" type="text/css">
+<link href="e42/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link href="e42/css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css">
+<link href="e42/css/custom.css" rel="stylesheet" type="text/css">
+<link href='http://fonts.googleapis.com/css?family=Special+Elite|Open+Sans:400italic,400,700' rel='stylesheet' type='text/css'>
+</head>
+<body>
+<header class="row-fluid">
+	<div class="span12 text-center">
+    	<h1>Binary to Decimal</h1>
+    </div>
+</header>
+<div class="navbar navbar-default">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="e42.html">10 Types of People</a>
+          </div>
+          <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+              <li><a href="e42.html">Home</a></li>
+              <li><a href="binary.html">Binary</a></li>
+              <li><a href="decimal.html">Decimal</a></li>
+              <li><a href="hexadecimal.html">Hexadecimal</a></li>
+              <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown">Binary Conversions<b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li class="active"><a href="b2d.html">Binary to Decimal</a></li>
+                  <li><a href="b2h.html">Binary to Hexadecimal</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown">Decimal Conversions <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="d2b.html">Decimal to Binary</a></li>
+                  <li><a href="d2h.html">Decimal to Hexadecimal</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown">Hexadecimal Conversions <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="h2b.html">Hexadecimal to Binary</a></li>
+                  <li><a href="h2d.html">Hexadecimal to Decimal</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+<div class="jumbotron">
+<div class="container text-center">
+      <div class="row">
+  <div class="col-xs-6 col-md-2"></div>
+  <div class="col-xs-6 col-md-8">
+<h1>01100010 01101001 01101110 01100001 01110010 01111001</h1>
+    <p>Converting from binary to decimal is pretty easy... as long as you can multiply by 2!</p>
+</div>
+</div>
+</div>
+  <div class="col-xs-6 col-md-2"></div>
+</div>
+<div class="row">
+  <div class="col-xs-6 col-md-3"></div>
+  <div class="col-xs-6 col-md-6">
+  <p2>1. Count out how long your binary number is.<br>
+  		2. Write out a table with columns - as many as the number you came up with in step 1.<br>
+        3. Starting from the right, head each one with 2 to the power of 0 through (n-1) where n is the number from step 1.<br>
+        4. In the row below, write out these values.  This will come more naturally later, but is good practice for beginners.<br>
+        5. Now, write your binary number out in the row below, one digit per box.<br>
+        6. If a box has a 1, carry the number down from step 4, if not, carry down a 0.  Write these values in this row.<br>
+		7. Add the numbers across from step 6.  This is the decimal equivalent of your binary number!<br>
+        </p2>
+        <table class="table">
+  		<thead>
+    	<tr>
+        	<th>A</th>
+            <th>B</th>
+            <th>C</th>
+            <th>D</th>
+            <th>E</th>
+            <th>F</th>
+            <th>G</th>
+            <th>H</th>
+            <th>Exaplanation</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+        	<td></td>
+        	<td></td>
+        	<td></td>
+        	<td></td>
+        	<td></td>
+        	<td></td>
+        	<td></td>
+        	<td></td>
+        	<td>Our binary number is 11010011.  It has 8 digits, so we have an 8 column table.</td>
+        </tr>
+        <tr>
+        	<td>2<sup>7</sup></td>
+        	<td>2<sup>6</sup></td>
+        	<td>2<sup>5</sup></td>
+        	<td>2<sup>4</sup></td>
+        	<td>2<sup>3</sup></td>
+        	<td>2<sup>2</sup></td>
+        	<td>2<sup>1</sup></td>
+        	<td>2<sup>0</sup></td>
+        	<td></td>
+        </tr>
+        <tr>
+        	<td>128</td>
+        	<td>64</td>
+        	<td>32</td>
+        	<td>16</td>
+        	<td>8</td>
+        	<td>4</td>
+        	<td>2</td>
+        	<td>1</td>
+        	<td>2<sup>0</sup> is equal to 1 in this case.  It's easy to do the rest as you just keep multiplying by 2 each time.  1 times 2 is 2, 2 times 2 is 4, 4 times 2 is 8... easy pattern!</td>
+        </tr>
+        <tr>
+        	<td>1</td>
+        	<td>1</td>
+        	<td>0</td>
+        	<td>1</td>
+        	<td>0</td>
+        	<td>0</td>
+        	<td>1</td>
+        	<td>1</td>
+        	<td>We enter our binary number across the table, one digit per cell.</td>
+        </tr>
+        <tr>
+        	<td>128</td>
+        	<td>64</td>
+        	<td>0</td>
+        	<td>16</td>
+        	<td>0</td>
+        	<td>0</td>
+        	<td>2</td>
+        	<td>1</td>
+        	<td>We replace all of the zeroes from the row above into the base 2 row and come up with these values.  In the next step we'll add them.</td>
+        </tr>
+        <tr>
+        	<td></td>
+        	<td></td>
+        	<td></td>
+        	<td></td>
+        	<td></td>
+        	<td></td>
+        	<td></td>
+        	<td></td>
+        	<td>128 + 64 + 16 + 2 + 1 = 211 Voila! <b>11010011</b> in binary is equivalent to <b>211</b> in decimal.</td>
+        </tr>
+        </tbody>
+        </table>
+    </div>
+      </div>
+  </div>
+  <div class="col-xs-6 col-md-3"></div>
+</div>
+
+        </div>       
+<footer class="footer">
+    <p>&copy; 2014 Jenni Whitman</p>
+</footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="http://getbootstrap.com/dist/js/bootstrap.min.js"></script>
+    <script src="http://getbootstrap.com/assets/js/docs.min.js"></script>
+</body>
+</html>

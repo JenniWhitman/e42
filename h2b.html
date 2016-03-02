@@ -1,0 +1,143 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Hexadecimal to Binary</title>
+<link href="e42/css/bootstrap.css" rel="stylesheet" type="text/css">
+<link href="e42/css/bootstrap-responsive.css" rel="stylesheet" type="text/css">
+<link href="e42/css/bootstrap-extended.css" rel="stylesheet" type="text/css">
+<link href="e42/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link href="e42/css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css">
+<link href="e42/css/custom.css" rel="stylesheet" type="text/css">
+<link href='http://fonts.googleapis.com/css?family=Special+Elite|Open+Sans:400italic,400,700' rel='stylesheet' type='text/css'>
+</head>
+<body>
+<header class="row-fluid">
+	<div class="span12 text-center">
+    	<h1>Hexadecimal to Binary</h1>
+    </div>
+</header>
+<div class="navbar navbar-default">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="e42.html">10 Types of People</a>
+          </div>
+          <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+              <li><a href="e42.html">Home</a></li>
+              <li><a href="binary.html">Binary</a></li>
+              <li><a href="decimal.html">Decimal</a></li>
+              <li><a href="hexadecimal.html">Hexadecimal</a></li>
+              <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown">Binary Conversions<b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="b2d.html">Binary to Decimal</a></li>
+                  <li><a href="b2h.html">Binary to Hexadecimal</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown">Decimal Conversions <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="d2b.html">Decimal to Binary</a></li>
+                  <li><a href="d2h.html">Decimal to Hexadecimal</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown">Hexadecimal Conversions <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li class="active"><a href="h2b.html">Hexadecimal to Binary</a></li>
+                  <li><a href="h2d.html">Hexadecimal to Decimal</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+<div class="jumbotron">
+<div class="container text-center">
+      <div class="row">
+  <div class="col-xs-6 col-md-2"></div>
+  <div class="col-xs-6 col-md-8">
+<h1>48 65 78 61 64 65 63 69 6d 61 6c</h1>
+    <p>Converting from Hexadecimal to Binary is easy as long as you understand the values of <a href="binary.html"><font color="black"><u>Binary</u></font></a> and <a href="hexadecimal.html"><font color="black"><u>Hexadecimal</u></font></a>.</p>
+
+</div>
+</div>
+</div>
+  <div class="col-xs-6 col-md-2"></div>
+</div>
+<div class="row">
+  <div class="col-xs-6 col-md-3"></div>
+  <div class="col-xs-6 col-md-6">
+  <p2>1.  Take the Hexadecimal number and write it out in columns, one digit per column.</p2>
+  <br>
+  <p2>2. [This step is only necessary if you have trouble with remembering that A-F = 10-15] Convert the calues to basic decimal.</p2>
+  <br>
+  <p2>3.  Convert each value to a basic 4 digit binary sequence and sandwich them together.  Done!</p2>
+  <br>  
+  
+  <table class="table">
+  		<thead>
+    	<tr>
+            <th>D</th>
+            <th>C</th>
+            <th>B</th>
+            <th>A</th>
+            <th>Exaplanation</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+        	<td>E</td>
+        	<td>1</td>
+        	<td>2</td>
+        	<td>B</td>
+        	<td>Our hex number will be E12B.  Enter it across a chart like shown.</td>
+        </tr>
+        <tr>
+        	<td>14</td>
+        	<td>1</td>
+        	<td>2</td>
+        	<td>11</td>
+        	<td>Because we're usually more comfortable with decimal, I find it helpful to convert to decimal before the binary conversion.  In this case, that would be the E and the B.  The E becomes a 14 and the B becomes an 11.</td>
+        </tr>
+        <tr>
+        	<td>1110</td>
+        	<td>0001</td>
+        	<td>0010</td>
+        	<td>1011</td>
+        	<td>Now convert these to binary.  These are simple values that we have listed on the <a href="binary.html">Binary</a> Page, but that are also good practice for a quick <a href="d2b.html">Decimal to Binary</a> conversion.  Either way, these will soon become second nature.</td>
+        </tr>
+        <tr>
+        	<td>1110</td>
+        	<td>0001</td>
+        	<td>0010</td>
+        	<td>1011</td>
+        	<td>For the final step, we take this long string of ones and zeros and put it together making <b>1110000100101011</b> which is the binary equivalent of our hexadecimal number <b>E12B</b>.</td>
+        </tr>
+        </tbody>
+        </table>
+    </div>
+      </div>
+  </div>
+  <div class="col-xs-6 col-md-3"></div>
+</div>
+
+        </div>
+
+    
+<footer class="footer">
+    <p>&copy; 2014 Jenni Whitman</p>
+</footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="http://getbootstrap.com/dist/js/bootstrap.min.js"></script>
+    <script src="http://getbootstrap.com/assets/js/docs.min.js"></script>
+</body>
+</html>
+
